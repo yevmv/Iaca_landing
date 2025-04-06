@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth
+}
+/* Основной стиль для хедера */
+.header {
+    background-color: #151019;
+    padding: 30px 0;
+    color: #fff;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Контейнер для всего хедера */
+.container {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    
+}
+
+/* Логотип */
+.logo img {
+    height: 100px;
+}
+
+/* Навигация */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Переключатели языка */
+.language-switcher {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* Кнопка */
+.cta-btn {
+    padding-bottom: 40px;
+}
+
+/* Кнопка */
+.cta-btn a {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #8c2c8e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.cta-btn a:hover {
+    background-color: #FF6E30;
+}
+
+
+
+
+/* Стили для секции */
+.services {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+
+.services h1 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.services p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Контейнер с категориями услуг */
+.serv-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+serv-categories {
+    grid-area: main;
+}
+
+/* Стили для кнопки */
+.service-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
+    padding: 20px;
+    width: 400px;
+    justify-content: space-between;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+.service-btn .btn-doc {
+  width: 80px;
+  height: auto;
+}
+
+.service-btn h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.service-btn:hover {
+    border-color: #8C2C8E;
+    transform: translateY(-10px);
+}
+
+.arrow {
+    font-size: 40px;
+    color: #ff6e30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Описание каждой услуги */
+.service-description {
+    display: grid;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.service-detail {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+
+.service-detail h3 {
+    font-size: 24px;
+    color: #8C2C8E;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-detail p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service-detail ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.service-detail ul li {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Основной стиль для футера */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  max-width: 100%; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Стиль для верхней части футера */
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1200px;
+}
+
+.foot-call-form {
+  display: flex;
+  gap: 20px;
+}
+
+.foot-call-form input {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+.foot-call-form button {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #8C2C8E;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  border: none; /* Убираем стандартную обводку у кнопки */
+  cursor: pointer;
+  
+}
+
+.foot-call-form button:hover {
+  background-color: #FF6E30;
+}
+
+.footer-top p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+
+.footer-conf {
+  display: grid;
+  place-items: center;
+  padding: 40px;
+}
+
+.footer-conf a {
+background-color: none;
+color: #8C2C8E;
+text-decoration: none;
+}
+
+.footer-line {
+border: solid 1px #5D5564;
+margin-bottom: 40px;
+}
+
+/* Стиль для нижней части футера */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: start;
+  gap: 30px;
+
+}
+
+
+.footer-bottom p, li{
+  margin-bottom: 10px;
+  
+}
+
+.footer-title {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: start ;
+  gap: 30px;
+
+}
+
+.footer-title p:not(.phone) {
+  letter-spacing: 3px; /* Увеличиваем интервал между буквами */
+}
+
+.footer-title .phone {
+  font-size: 30px;
+  color: white;
+}
+
+.footer-title p {
+  font-size: 16px; /* Размер текста по умолчанию для всех p */
+  color: #868588;    /* Серый цвет для всех p */
+}
+
+.info{
+  font-size: 13px;
+  padding-bottom: 5px;
+  color: #868588;
+}
+.footer-services ul {
+  padding-top: 10px;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.footer-bottom .presentation a {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-bottom .presentation img {
+  width: 100px;
+  height: auto;
+}
+.social-circle {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.social-circle img{
+  width: 55px;
+  height: auto;
+}
+
+.social-circle img.overlay{
+  position: absolute; /* Абсолютное позиционирование для второго изображения */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.footer-important a {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  color: #8C2C8E;
+  text-decoration: none;
+  
+}
+
+.footer-contact a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.footer-bottom .footer-contact .number  {
+  color: #8C2C8E;
+} 
+
+.footer-services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.footer-important .social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-important .social-media a {
+  color: #8C2C8E;
+  text-decoration: none;
+}
+
+.bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px;
+  color: #868588;
+}
+.bottom-footer a {
+  color: #868588;
+  text-decoration: none;
+}
+
+.footer-size {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+    /* Стили для полосы прокрутки */
+    ::-webkit-scrollbar {
+      width: 12px; /* Ширина вертикальной полосы прокрутки */
+      height: 12px;
+    }
+
+    /* Стили для фона полосы прокрутки */
+    ::-webkit-scrollbar-track {
+      background: #ffffff; /* Светлый фон полосы прокрутки */
+    }
+
+    /* Стили для самого ползунка */
+    ::-webkit-scrollbar-thumb {
+      background: #a8a8a8; /* Темно-серый цвет ползунка */
+      border-radius: 15px; /* Округленные углы ползунка */
+      transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    }
+
+    /* Стили для ползунка при наведении */
+    ::-webkit-scrollbar-thumb:hover{
+      background: #555; /* Темно-серый цвет при наведении */
+    }
