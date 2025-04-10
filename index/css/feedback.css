@@ -5,9 +5,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+  font-family: Inter, 'Medium,Bold', sans-serif;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
+  color: #333;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Основной стиль для хедера */
@@ -96,24 +98,28 @@ body {
 .cta-btn a:hover {
     background-color: #FF6E30;
 }
-
+.feedback-title{
+  animation: fadeIn 0.8s ease-in-out;
+  padding: 35px 20px;
+  
+}
 .feedback-title h1{
     color: #8c2c8e;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
-    background-color: #eaeaea;
 }
 
-.firstfeedback {
+.sibersfeedback {
     display: grid;
     grid-template-columns: 200px 800px;
     justify-content: center;
     padding: 50px;
     gap: 50px;
-    background-color: white ;
-}
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
+  
+  }
 
 .pafeedback {
     display: grid;
@@ -121,34 +127,71 @@ body {
     justify-content: center;
     padding: 50px;
     gap: 50px;
-    background-color: #eaeaea;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.359);
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
     justify-items: end;
 }
-.pafeedback .peerapp img {
-    width: 130px;
-    height: auto;
-    padding-right: 20px;
-  }
+.sibers-description,
+.anz-description,
+.peerapp-description{
+  background-color: #ffffffc4;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.337);
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out;
+
+}
+
 .anzfeedback {
     display: grid;
     grid-template-columns: 200px 800px;
     justify-content: center;
     padding: 50px;
     gap: 50px;
-    background-color: white;
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
     justify-items: end
 
 }
+.pafeedback .peerapp img {
+  width: 130px;
+  height: auto;
+  padding-right: 20px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.337);
+  border-radius: 8px;
+  animation: fadeIn 1.2s ease-in-out;
+  animation: slideUp 1.2s ease-in-out;
 
+}
+.sibers img{
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.337);
+  border-radius: 8px;
+  padding: 25px;
+  width: 200px;
+  animation: slideUp 1.2s ease-in-out;
+
+
+}
 .anzfeedback .anz img {
     width: 170px;
     height: auto;
     padding-right: 20px;
+    background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.337);
+  border-radius: 8px;
+  animation: slideUp 1.2s ease-in-out;
+
+
   }
 
 /* Основной стиль для футера */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #151019;
     color: #fff;
     font-family: Arial, sans-serif;
     padding: 30px;
@@ -372,4 +415,13 @@ body {
       /* Стили для ползунка при наведении */
       ::-webkit-scrollbar-thumb:hover{
         background: #555; /* Темно-серый цвет при наведении */
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
       }

@@ -14,9 +14,11 @@ html {
 
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  font-family: Inter, 'Medium,Bold', sans-serif;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
   color: #333;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Контейнер для всего хедера */
@@ -102,11 +104,28 @@ body {
 
 
 /* Стили для секции */
+.main-title {
+  font-size: 35px;
+  color: #8C2C8E;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+
+}
+.main-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #8C2C8E, #FF6E30);
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
 .services {
-    background-color: #f9f9f9;
     padding: 30px 0;
 }
-
 
 .services h1 {
     font-size: 32px;
@@ -129,6 +148,8 @@ body {
     justify-content: center;
     gap: 30px;
     padding-bottom: 30px;
+    animation: fadeIn 0.8s ease-in-out;
+    padding: 50px 20px;
 }
 serv-categories {
     grid-area: main;
@@ -190,6 +211,8 @@ serv-categories {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: transform 0.3s ease;
+    animation: slideUp 1s ease-in-out;
+
 }
 
 
@@ -219,7 +242,7 @@ serv-categories {
 
 /* Основной стиль для футера */
 .footer {
-  background-color: #1a1a1a;
+  background-color: #151019;
   color: #fff;
   font-family: Arial, sans-serif;
   padding: 30px;
@@ -423,24 +446,33 @@ margin-bottom: 40px;
   margin: 0 auto;
 }
     /* Стили для полосы прокрутки */
-    ::-webkit-scrollbar {
+::-webkit-scrollbar {
       width: 12px; /* Ширина вертикальной полосы прокрутки */
       height: 12px;
     }
 
     /* Стили для фона полосы прокрутки */
-    ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
       background: #ffffff; /* Светлый фон полосы прокрутки */
     }
 
     /* Стили для самого ползунка */
-    ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
       background: #a8a8a8; /* Темно-серый цвет ползунка */
       border-radius: 15px; /* Округленные углы ползунка */
       transition: background-color 0.3s ease; /* Плавное изменение цвета */
     }
 
     /* Стили для ползунка при наведении */
-    ::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover{
       background: #555; /* Темно-серый цвет при наведении */
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }

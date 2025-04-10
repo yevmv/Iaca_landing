@@ -5,9 +5,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+  font-family: Inter, 'Medium,Bold', sans-serif;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.335),rgba(251, 0, 255, 0.294) );
+  color: #333;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Основной стиль для хедера */
@@ -120,7 +122,15 @@ body {
 .cta-btn a:hover {
     background-color: #FF6E30;
 }
-
+.main-title {
+  animation: fadeIn 0.8s ease-in-out;
+  padding: 50px 20px;
+  font-size: 35px;
+  color: #333;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.8s ease-in-out;
+}
 .violet {
   color: #8C2C8E;
 }
@@ -135,7 +145,17 @@ body {
     justify-content: center;
     gap: 50px;
     padding-bottom: 80px;
+    animation: slideUp 1s ease-in-out;
+
 }
+
+.description {
+  background-color: #ffffffb1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.337);
+  border-radius: 8px;
+  padding: 25px;
+}
+
 .description-video button {
   padding: 15px 25px;
   font-size: 16px;
@@ -147,7 +167,8 @@ body {
   height: 60px;
   border: none; /* Убираем стандартную обводку у кнопки */
   cursor: pointer;
- 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.337);
+
 }
 
 .description-video button:hover {
@@ -165,14 +186,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .video-container iframe {
   width: 90%;  /* Устанавливает ширину на 100% от родительского контейнера */
-  height: 450px; /* Устанавливает высоту видео */
-
+  height: 500px; /* Устанавливает высоту видео */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 .we {
   padding: 50px;
+  animation: slideUp 1s ease-in-out;
+
 }
 .block {
   background-color: #8C2C8E;
@@ -184,9 +209,8 @@ body {
   height: 180px;
   justify-content: space-between; /* Расстояние между элементами */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для блока */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока */
   transition: 0.3s ease; /* Плавные переходы при наведении */
-
   background-color: #8C2C8E; /* Пурпурный фон */
   background-size: cover; /* Изображение будет масштабироваться, чтобы покрыть весь блок */
   background-position: center; /* Центрирует изображение */
@@ -227,6 +251,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   width: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .team-member img {
@@ -249,7 +277,7 @@ body {
 
 /* Основной стиль для футера */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #151019;
     color: #fff;
     font-family: Arial, sans-serif;
     padding: 30px;
@@ -475,4 +503,13 @@ body {
       /* Стили для ползунка при наведении */
       ::-webkit-scrollbar-thumb:hover{
         background: #555; /* Темно-серый цвет при наведении */
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
       }

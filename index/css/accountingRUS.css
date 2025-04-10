@@ -1,4 +1,4 @@
-/* header */
+/* Основной стиль для футера */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +6,9 @@
 }
 
 body {
-  font-family: Inter, 'Medium,Bold', sans-serif;
-  background: linear-gradient(135deg, rgba(255, 140, 0, 0.444),rgba(251, 0, 255, 0.542) );
-  color: #333;
-  min-height: 100vh;
-  position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 /* Основной стиль для хедера */
@@ -29,11 +27,18 @@ body {
     align-items: center;
     column-gap: 20px;
     grid-template-areas: 
-    "header header header"
     "main main main"
-    "footer footer footer"
     
 }
+
+.price-container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+
+}
+
 /* Логотип */
 .logo img {
     height: 100px;
@@ -99,58 +104,113 @@ body {
     background-color: #FF6E30;
 }
 
-/* main section*/
+/* Обновление стилей для main */
+main {
+    background: linear-gradient(135deg, rgba(255, 77, 0, 0.1), rgba(251, 0, 255, 0.1));
+    color: #333;
+    padding: 50px 20px;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Контент внутри main */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 .main-title {
-  animation: fadeIn 0.8s ease-in-out;
-  padding: 50px 20px;
-  font-size: 35px;
-  color: #8C2C8E;
-  text-align: center;
-  position: relative;
-}
-
-.violet{
+    font-size: 40px;
     color: #8C2C8E;
-}
-.company-name h1{
-    padding: 40px 0;
-}
-.maps {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-bottom: 30px;
     text-align: center;
-    padding-bottom: 150px;
-    margin: 0 150px;
-    animation: slideUp 1s ease-in-out;
-
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.maps p{
-    padding-top: 10px;
+.main-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #8C2C8E, #FF6E30);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
-.maps h2{
-    padding-bottom: 10px;
+
+/* Вводный текст */
+.intro-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3c3c3c;
+    animation: fadeIn 1.2s ease-in-out;
 }
-.maps a{
-    display: inline-block;
-    padding-top: 10px;
-    text-decoration: none;
-    color: #00B6D6
-}
-.city,
-.akadem {
-  background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.467);
+
+/* Секции услуг */
+.service-section {
+    padding: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    animation: slideUp 1s ease-in-out;
+}
+
+.service-section h2 {
+    font-size: 24px;
+    color: #8C2C8E;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.service-section h2::after {
+    content: '';
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    background: #8C2C8E;
+    bottom: -5px;
+    left: 0;
+}
+
+.service-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.service-section ul {
+    list-style: none;
+    margin: 15px 0 15px 20px;
+}
+
+.service-section ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.service-section ul li::before {
+    content: '✔';
+    color: #8C2C8E;
+    position: absolute;
+    left: 0;
+}
+
+/* Кнопки внутри секций */
+.service-section .cta-btn {
+    margin-right: 10px;
 }
 
 
-/* Основной стиль для футера */
 .footer {
-  background-color: #151019;
+    background-color: #151019;
     color: #fff;
     font-family: Arial, sans-serif;
     padding: 30px;
@@ -177,8 +237,7 @@ body {
     border-radius: 4px;
     border: none;
   }
-
-
+  
   .foot-call-form button {
     padding: 15px;
     font-size: 16px;
@@ -191,7 +250,6 @@ body {
     width: 200px;
     border: none; /* Убираем стандартную обводку у кнопки */
     cursor: pointer;
-    
   }
   
   .foot-call-form button:hover {
@@ -203,8 +261,6 @@ body {
     color: #ffffff;
   }
   
-  
-  
   .footer-conf {
     display: grid;
     place-items: center;
@@ -212,14 +268,14 @@ body {
   }
   
   .footer-conf a {
-  background-color: none;
-  color: #8C2C8E;
-  text-decoration: none;
+    background-color: none;
+    color: #8C2C8E;
+    text-decoration: none;
   }
   
   .footer-line {
-  border: solid 1px #5D5564;
-  margin-bottom: 40px;
+    border: solid 1px #5D5564;
+    margin-bottom: 40px;
   }
   
   /* Стиль для нижней части футера */
@@ -228,21 +284,17 @@ body {
     grid-template-columns: repeat(3, 1fr);
     place-items: start;
     gap: 30px;
-  
   }
   
-  
-  .footer-bottom p, li{
+  .footer-bottom p, li {
     margin-bottom: 10px;
-    
   }
   
   .footer-title {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: start ;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: start;
     gap: 30px;
-  
   }
   
   .footer-title p:not(.phone) {
@@ -256,24 +308,27 @@ body {
   
   .footer-title p {
     font-size: 16px; /* Размер текста по умолчанию для всех p */
-    color: #868588;    /* Серый цвет для всех p */
+    color: #868588; /* Серый цвет для всех p */
   }
   
-  .info{
+  .info {
     font-size: 13px;
     padding-bottom: 5px;
     color: #868588;
   }
+  
   .footer-services ul {
     padding-top: 10px;
+    list-style: none;
+    padding-left: 0;
   }
   
   .presentation {
     display: flex;
     align-items: center;
     justify-content: center;
-  
   }
+  
   .footer-bottom .presentation a {
     color: white;
     font-size: 15px;
@@ -283,18 +338,20 @@ body {
     width: 100px;
     height: auto;
   }
+  
   .social-circle {
     display: flex;
     gap: 25px;
     justify-content: center;
     align-items: center;
   }
-  .social-circle img{
+  
+  .social-circle img {
     width: 55px;
     height: auto;
   }
   
-  .social-circle img.overlay{
+  .social-circle img.overlay {
     position: absolute; /* Абсолютное позиционирование для второго изображения */
     top: 0;
     left: 0;
@@ -308,7 +365,6 @@ body {
     padding-top: 10px;
     color: #8C2C8E;
     text-decoration: none;
-    
   }
   
   .footer-contact a {
@@ -317,15 +373,9 @@ body {
     color: white;
   }
   
-  .footer-bottom .footer-contact .number  {
+  .footer-bottom .footer-contact .number {
     color: #8C2C8E;
-  } 
-  
-  .footer-services ul {
-    list-style: none;
-    padding-left: 0;
   }
-  
   
   .footer-important .social-media {
     display: flex;
@@ -345,6 +395,7 @@ body {
     padding: 50px;
     color: #868588;
   }
+  
   .bottom-footer a {
     color: #868588;
     text-decoration: none;
@@ -356,33 +407,35 @@ body {
     margin: 0 auto;
   }
       /* Стили для полосы прокрутки */
-      ::-webkit-scrollbar {
-        width: 12px; /* Ширина вертикальной полосы прокрутки */
-        height: 12px;
-      }
+::-webkit-scrollbar {
+  width: 12px; /* Ширина вертикальной полосы прокрутки */
+  height: 12px;
+}
+
+/* Стили для фона полосы прокрутки */
+::-webkit-scrollbar-track {
+  background: #ffffff; /* Светлый фон полосы прокрутки */
+}
+
+/* Стили для самого ползунка */
+::-webkit-scrollbar-thumb {
+  background: #a8a8a8; /* Темно-серый цвет ползунка */
+  border-radius: 15px; /* Округленные углы ползунка */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Стили для ползунка при наведении */
+::-webkit-scrollbar-thumb:hover{
+  background: #555; /* Темно-серый цвет при наведении */
+}
+/* Анимации */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
   
-      /* Стили для фона полосы прокрутки */
-      ::-webkit-scrollbar-track {
-        background: #ffffff; /* Светлый фон полосы прокрутки */
-      }
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
   
-      /* Стили для самого ползунка */
-      ::-webkit-scrollbar-thumb {
-        background: #a8a8a8; /* Темно-серый цвет ползунка */
-        border-radius: 15px; /* Округленные углы ползунка */
-        transition: background-color 0.3s ease; /* Плавное изменение цвета */
-      }
-  
-      /* Стили для ползунка при наведении */
-      ::-webkit-scrollbar-thumb:hover{
-        background: #555; /* Темно-серый цвет при наведении */
-      }
-      @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-      }
-      
-      @keyframes slideUp {
-        0% { opacity: 0; transform: translateY(20px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }

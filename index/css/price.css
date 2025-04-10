@@ -6,9 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+  font-family: Inter, 'Medium,Bold', sans-serif;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
+  color: #333;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Основной стиль для хедера */
@@ -36,6 +38,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     flex-direction: column;
+    animation: slideUp 1.2s ease-in-out;
+
 
 }
 
@@ -103,32 +107,54 @@ body {
 .cta-btn a:hover {
     background-color: #FF6E30;
 }
-.price-name{
-    padding: 30px;
+.main-title {
+  animation: fadeIn 0.8s ease-in-out;
+  padding: 50px 20px;
+  font-size: 35px;
+  color: #8C2C8E;
+  text-align: center;
+  position: relative;
+}
+.main-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #8C2C8E, #FF6E30);
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 .price-description {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+
 }
 
 .price-description h1{
-    font-size: 23px;
+  font-size: 23px;
 }
 .price-description p{
-    padding:30px 0;
-    font-size: 14px;
-    color: #6f6e71;
+  padding:30px 0;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3c3c3c;
 }
 
 .price-container h2{
   padding: 30px 0;
   width: 40%;
+  color: #333;
 }
 .price-table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.064), rgb(255, 255, 255), rgba(255, 255, 255, 0.212));
 
 }
 
@@ -154,14 +180,26 @@ body {
 
 .call-block{
   display: flex;
-  padding:  50px 0;
   align-items: center;
+  padding-inline:  20px;
+  margin: 50px 0;
   justify-content: center;
   flex-direction: column;
   gap: 40px;
   font-size: 20px;
-}
+  color: #8C2C8E;
 
+}
+.call-wind{
+  display: flex;
+  padding: 40px 30px;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.359);
+}
 .call-form {
   display: flex;
   align-items: center;
@@ -175,6 +213,7 @@ body {
   height: 60px;
   border: none; /* Убираем стандартную обводку у кнопки */
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.359);
  
 }
 
@@ -188,7 +227,7 @@ body {
     font-size: 16px;
 }
 .footer {
-    background-color: #1a1a1a;
+    background-color: #151019;
     color: #fff;
     font-family: Arial, sans-serif;
     padding: 30px;
@@ -412,4 +451,13 @@ body {
       /* Стили для ползунка при наведении */
       ::-webkit-scrollbar-thumb:hover{
         background: #555; /* Темно-серый цвет при наведении */
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
