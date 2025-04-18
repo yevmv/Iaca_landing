@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /user-data/
+Disallow: /cart/
+Disallow: /checkout/
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+Allow: /feedback.html
+
+Sitemap: https://www.mywebsite.com/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /test/
+
+User-agent: Yandex
+Disallow: /test/
