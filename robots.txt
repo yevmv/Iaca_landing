@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /user-data/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow /404.html
+Disallow /404/
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+Allow: /feedback.html
+
+Sitemap: sitemap/sitemap.xml
+
+User-agent: Googlebot
+Disallow: /test/
+
+User-agent: Yandex
+Disallow: /test/

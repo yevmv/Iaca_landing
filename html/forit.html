@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные -->
+    <meta name="description" content="IACA Consulting предоставляет бухгалтерские и юридические услуги в России и США, включая налоговое планирование, регистрацию компаний, бухгалтерский аутсорсинг и консультации для IT-компаний.">
+    <meta name="keywords" content="IACA, Consulting, бухгалтерские услуги, налоговое планирование, регистрация компании, юридические услуги, бухгалтерский аутсорсинг, IT-компании, бизнес в США, регистрация LLC, регистрация Corporation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IACA Consulting">
+    <!-- соц сети -->
+    <meta property="og:title" content="IACA Consulting - Международные бухгалтерские и консалтинговые услуги">
+    <meta property="og:description" content="Предоставляем бухгалтерские и юридические услуги в России и США, помогаем с налоговым планированием, регистрацией компаний и консультируем IT-компании.">
+    <meta property="og:image" content="URL_к_изображению_для_сети_размер_1200x630.jpg">
+    <meta property="og:url" content="http://host1879272.hostland.pro/index.html">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <title>IACA Consulting | Международные бухгалтерские и консалтинговые услуги</title>
+    <link rel="stylesheet" href="../css/forit.css">
+    <link rel="icon" type="image/png" href="/./img/earth.svg">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./Js/feedback.js" defer></script>
+    <script src="./Js/menu.js" defer></script>
+    <script src="./Js/modalwin.js" async></script>
+    <script src="./Js/scrollUpBtn.js" defer></script>
+</head>
+    
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.webp" alt="IACA"></a>
+        </div>
+        <button class="hamburger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                <li><a href="../rus.html">УСЛУГИ В РОССИИ</a></li>
+                <li><a href="../usa.html">УСЛУГИ В США</a></li>
+                <li><a href="../feedback.html">ОТЗЫВЫ</a></li>
+                <li><a href="../price.html">ЦЕНЫ</a></li>
+                <li><a href="../about.html">О КОМПАНИИ</a></li>
+                <li><a href="../contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+            <!--Группа для кнопки и переключения языка-->
+        <div class="switch-btn">
+            <div class="language-switcher">
+                    <a href="#">RUS</a> | <a href="#">ENG</a>
+            </div>
+
+            <div class="cta-btn">
+                <a href="#" onclick="openForm('brief')">Заказать проект</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="modalwin">
+    <div class="modal-backdrop" id="modalBackdrop" onclick="closeForm()"></div>
+    <div class="contact-button" onclick="toggleForm()" aria-expanded="false" aria-controls="contactForm" role="button" tabindex="0" onkeydown="if(event.key==='Enter' || event.key===' ') toggleForm();">Связаться</div>
+    <div class="contact-form" id="contactForm" aria-hidden="true">
+        <form id="contactFormData" novalidate>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+            </div>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="organization">Организация</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Содержание письма</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">Я ознакомлен и согласен с <a href="#" tabindex="0">политикой конфиденциальности</a> и принимаю <a href="#" tabindex="0">соглашение об обработке персональных данных</a> *</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+  </section>
+<main>
+    <div class="main-content">
+        <h1 class="main-title">Специально для IT-компаний</h1>
+        <p class="intro-text">Услуги CPA в США (бухгалтерский учет, налоги, регистрация компаний).</p>
+
+        <div class="service-section">
+            <h2>Почему рынок США привлекателен?</h2>
+            <p>Американский рынок привлекателен своим размером. Ссылаясь на данные Всемирного банка, он более чем в 4 раза больше российского. Поэтому бесспорен интерес выхода на рынок США IT-компаниям со своими продуктами и разработками.</p>
+            <p>Другая причина, привлекающая бизнес в США, — это эффективность и надежность институтов, таких как право собственности, организованная торговля, судебный порядок. Зачастую бизнесмены ищут варианты защиты их активов через регистрацию в США.</p>
+            <p>Многие покупатели в США находят более комфортным работать с бизнесом, зарегистрированным в США, нежели с иностранной компанией. Это объясняется налоговыми и отчетными формальностями по транзакциям с зарубежными партнерами, а также возможностью обратиться к судебному порядку США. Кроме того, играет роль российская экономическая нестабильность вкупе с коррупцией и случаями мошенничества.</p>
+            <p>Если у вас есть готовый продукт для коммерческого использования и вы готовы расширять продажи на рынок США, вам, возможно, стоит рассмотреть вариант работы через американскую корпорацию.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Особенности работы через американскую корпорацию</h2>
+            <p>IT-компания может продавать свои продукты через Corporation <strong>как с созданием офиса продаж в США, так и без офиса.</strong> Уникальность IT-бизнеса проявляется в том, что вы можете вести дела дистанционно, начиная с продаж и управления банковским счетом, заканчивая уплатой налогов и формированием и сдачей отчетности. Нужно понимать, тем не менее, что эффективность продаж будет выше, если будет присутствие сотрудников или агентов в США.</p>
+            <p>В любом случае, прежде чем открыть компанию в США, важно провести продуманное налоговое планирование. Важно определить <strong>штат регистрации,</strong> т.к. от этого будет зависеть, будете ли вы платить дополнительный налог с доходов в этом штате или нет.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Выбор формы юридического лица</h2>
+            <p>Вам нужно решить, какую форму юридического лица выбрать: <strong>LLC или Corporation.</strong> LLC подойдет только в случае, если ваш партнер – резидент США или вы планируете вскоре стать резидентом США. В этом случае вашему партнеру и вам будет выгоден режим устранения двойного налогообложения, при котором нет корпоративного налога, а собственники уплачивают свой налог, включая доходы, полученные на LLC. В противном случае следует регистрировать Корпорацию. По той причине, что Corporation платит корпоративный налог с дохода по прогрессивной ставке, начиная от 15%. В то время как в отношении иностранных собственников LLC обязано исчислять налог по ставке 39,6% для физических лиц и 35% для юридических вне зависимости от того, выплачивался доход или нет.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Права на интеллектуальную собственность</h2>
+            <p>Вам нужно определиться, на какой компании будут числиться <strong>права на интеллектуальную собственность</strong>: на российской компании или на Corporation. От этого будет зависеть налогообложение сделок в обеих странах. Например, если российская компания разрабатывает софт и передает права на распространение Корпорации, то российская компания получает доход от источника в США в виде роялти. Если Корпорация формирует объект интеллектуальной собственности, где подрядчиком выступает российская компания, то российская компания получает вознаграждение за услуги. Корпорация также может выполнять роль агента по продвижению ПО на рынке США за агентское вознаграждение, в этом случае российская компания будет платить за услугу по продвижению. Во всех случаях будет разное налогообложение и разные требования к отчетности.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Стратегии налогового планирования</h2>
+            <p>Можно говорить как минимум о двух стратегиях налогового планирования. Первая — это построить договорную схему между российской и американской компаниями таким образом, чтобы доход, получаемый российской компанией, не относился к доходу, источником которого является США, что позволит облегчить совокупное налоговое бремя. Вторая стратегия — это разделить функции между двумя компаниями таким образом, чтобы у американской корпорации облагалась только её часть от совокупного дохода двух компаний. Во всех случаях продуманное <strong>налоговое планирование</strong> необходимо для достижения оптимального результата в каждом конкретном случае. Без анализа и советов профессионалов здесь не обойтись.</p>
+            <p>Важно учитывать существование <strong>Tax Treaty USA-Russia</strong> (Соглашение об устранении двойного налогообложения между США и Россией), поскольку его требования преобладают над национальными налоговыми правилами.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Налоговая нагрузка и трансфертное ценообразование</h2>
+            <p>Что касается налоговой нагрузки в обеих юрисдикциях, то IT-компании при продуманной <strong>стратегии применяемых цен</strong> вместе с оптимальным выбором системы налогообложения в России (классика, УСН, индивидуальный предприниматель на УСН или патенте, аккредитация и проч.) могут получать дополнительную выгоду. При этом нужно не забывать, что обе страны в своем налоговом законодательстве содержат нормы, касающиеся трансфертного ценообразования.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Наша помощь</h2>
+            <p>Наш профессионализм, опыт и глубокое знание законодательства обеих стран позволят помочь вам в выборе формы, штата и оптимальной налоговой стратегии. <a href="#" class="contact-link cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-size">
+        <div class="footer-top">
+            <p>Заказать звонок на консультацию</p>
+            <form class="foot-call-form">
+              <input type="text" placeholder="ваше имя" />
+              <input type="tel" placeholder="Телефон" />
+              <button type="submit">Запись</button>
+            </form>
+        </div>
+        <div class="footer-conf">
+            <a href="">Политика конфиндециальности</a>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-title">
+            <p class="phone">8 (913) 914 58 64</p>
+            <p>НАПРАВЛЕНИЯ</p>
+            <p>ВАЖНОЕ</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-contact"> 
+              <p class="info">Звонок по России бесплатный</p>
+              <p><a href="mailto:office@iac-a.ru">office@iac-a.ru</a></p>
+              <p class="number">+7 (383) 223 4485</p>
+              <p>630007 г. Новосибирск, Красный проспект, 14, офис 508</p>
+              <p class="number">+7 (383) 363 3152</p>
+              <p>630128 г. Новосибирск, ул. Разъезжая, д. 12, левое крыло, первый этаж</p>
+              <p class="number">+1 206 355 7398</p>
+              <p>543 Kirkham Lane, League City, TX, 77573</p>
+            </div>
+        
+            <div class="footer-services">
+              <ul>
+                <li>Стратегический консалтинг</li>
+                <li>HR консалтинг</li>
+                <li>Управление изменениями</li>
+                <li>Управление рисками</li>
+                <li>Устойчивое развитие и ESG</li>
+                <li>Обучение и развитие</li>
+                <li>Оптимизация бизнес-процессов</li>
+              </ul>
+            </div>
+        
+            <div class="footer-important">
+                <div class="presentation">
+                    <a href="">
+                        <img src="../img/purpdoc.svg" alt="presentation">
+                        <a href="#">Скачать презентацию о IACA</a>
+                    </a>
+                </div> 
+                <br>
+                <div class="foot-call-form">
+                    <button type="submit">Связаться с нами</button>
+                </div>
+                <br>
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a href="https://twitter.com/iacaRussiaUSA" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/iacaRussiaUSA/" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>© 1999-2025, IACA Consulting</p>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>  
+</footer> 
+</body>
+<button class="scroll-up-btn" id="scrollUpBtn" title="Наверх">
+    ↑
+</button>
+</html>

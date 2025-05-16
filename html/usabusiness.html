@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные -->
+    <meta name="description" content="IACA Consulting предоставляет бухгалтерские и юридические услуги в России и США, включая налоговое планирование, регистрацию компаний, бухгалтерский аутсорсинг и консультации для IT-компаний.">
+    <meta name="keywords" content="IACA, Consulting, бухгалтерские услуги, налоговое планирование, регистрация компании, юридические услуги, бухгалтерский аутсорсинг, IT-компании, бизнес в США, регистрация LLC, регистрация Corporation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IACA Consulting">
+    <!-- соц сети -->
+    <meta property="og:title" content="IACA Consulting - Международные бухгалтерские и консалтинговые услуги">
+    <meta property="og:description" content="Предоставляем бухгалтерские и юридические услуги в России и США, помогаем с налоговым планированием, регистрацией компаний и консультируем IT-компании.">
+    <meta property="og:image" content="URL_к_изображению_для_сети_размер_1200x630.jpg">
+    <meta property="og:url" content="http://host1879272.hostland.pro/index.html">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <title>IACA Consulting | Международные бухгалтерские и консалтинговые услуги</title>
+    <link rel="stylesheet" href="../css/usabusiness.css">
+    <link rel="icon" type="image/png" href="/./img/earth.svg">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./Js/feedback.js" defer></script>
+    <script src="./Js/menu.js" defer></script>
+    <script src="./Js/modalwin.js" async></script>
+    <script src="./Js/scrollUpBtn.js" defer></script>
+</head>
+    
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.webp" alt="IACA"></a>
+        </div>
+        <button class="hamburger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                <li><a href="../rus.html">УСЛУГИ В РОССИИ</a></li>
+                <li><a href="../usa.html">УСЛУГИ В США</a></li>
+                <li><a href="../feedback.html">ОТЗЫВЫ</a></li>
+                <li><a href="../price.html">ЦЕНЫ</a></li>
+                <li><a href="../about.html">О КОМПАНИИ</a></li>
+                <li><a href="../contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+            <!--Группа для кнопки и переключения языка-->
+        <div class="switch-btn">
+            <div class="language-switcher">
+                    <a href="#">RUS</a> | <a href="#">ENG</a>
+            </div>
+
+            <div class="cta-btn">
+                <a href="#" onclick="openForm('brief')">Заказать проект</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="modalwin">
+    <div class="modal-backdrop" id="modalBackdrop" onclick="closeForm()"></div>
+    <div class="contact-button" onclick="toggleForm()" aria-expanded="false" aria-controls="contactForm" role="button" tabindex="0" onkeydown="if(event.key==='Enter' || event.key===' ') toggleForm();">Связаться</div>
+    <div class="contact-form" id="contactForm" aria-hidden="true">
+        <form id="contactFormData" novalidate>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+            </div>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="organization">Организация</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Содержание письма</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">Я ознакомлен и согласен с <a href="#" tabindex="0">политикой конфиденциальности</a> и принимаю <a href="#" tabindex="0">соглашение об обработке персональных данных</a> *</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+  </section>
+<main>
+    <div class="main-content">
+        <h1 class="main-title">Основы ведения бизнеса в США</h1>
+        <p class="intro-text">Услуги CPA в США (бухгалтерский учет, налоги, регистрация компаний). Профессиональные бухгалтерские услуги с 1999г.</p>
+
+        <div class="card-grid">
+            <div class="service-section">
+                <h2>Что привлекает компании вести бизнес в США?</h2>
+                <p>Во-первых, это значительный размер, а значит покупательная способность. Во-вторых, это благоприятная бизнес среда. Иностранный бизнес получает те же гарантии и привилегии, что и внутренний американский, включая поддержку малого бизнеса. Для начала и развития бизнеса в США для иностранных инвесторов или экспортеров в США созданы все условия, начиная от регистрации, отношений с банками, поставщиками, налоговой инспекцией и другими официальными институтами.</p>
+                <p>Приводим небольшой обзор вопросов, с которыми скорее всего столкнется любой бизнес. За более подробной информацией обращайтесь к нам за консультациями. <a href="#" class="contact-link cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+            </div>
+
+            <div class="service-section">
+                <h2>Бизнес право</h2>
+                <p>Если Вы ведете бизнес в США, то Вы скорее всего подчиняетесь требованиям Единого коммерческого права (<strong>Uniform Commercial Code, UCC</strong>). UCC является важнейшим общеамериканским источником права; регулирует весьма широкий круг вопросов, связанных не только с внутренней и внешней торговлей, но и с рядом других правоотношений; рассчитан на максимальное развитие торговли в системе свободного предпринимательства в сочетании с гарантиями от злоупотреблений для участников сделок, и прежде всего потребителей. Определяет стандартные правила по продажам, торговым бумагам, банковским депозитам и инкассовым операциям, аккредитивам, комплексному отчуждению, складским свидетельствам, коносаментам, другим товарораспорядительным документам, инвестиционным ценным бумагам, по обеспечению сделок и т.д. См. <a href="https://www.law.cornell.edu/ucc" target="_blank" class="contact-link cta-btn">UCC</a></p>
+            </div>
+
+            <div class="service-section">
+                <h2>Online торговля</h2>
+                <p>Для бизнесов, работающих через Интернет, существуют особые правила, касающиеся защиты персональных данных, безопасности, защиты прав интеллектуальной собственности и налогообложения. Федеральная торговая комиссия (<strong>Federal Trade Commission, FTC</strong>) – главный орган, регулирующий вопросы online торговли, включая e-mail рассылки, online рекламу и защиту персональных данных. См. <a href="https://www.ftc.gov/" target="_blank" class="contact-link cta-btn">FTC</a></p>
+            </div>
+
+            <div class="service-section">
+                <h2>Банки</h2>
+                <p>Открыть счет в американском банке не такая уж и простая задача. Банки следуют правилу «Знай своего клиента». Поэтому нужно подготовиться прежде чем идти в банк. Нужно иметь все необходимые документы, четко объяснить суть вашего бизнеса, продемонстрировать сайт компании. Расчетным счетом можно управлять дистанционно, как только он будет открыт. Для подключения вашей компании к системе получения электронных оплат (<strong>Merchant Services</strong>), банк потребует более подробную информацию.</p>
+            </div>
+
+            <div class="service-section">
+                <h2>Налоговая система США</h2>
+                <p>США имеют сложную налоговую систему, состоящую из трех уровней: федеральный, уровень штата и локальный. Компании, планирующие выходить на рынок США, должны предусмотреть в своем бизнес плане расходы на исполнение предусмотренных законом процедур. Будь то разного уровня отчетность, или соблюдение требований по минимальной оплате труда и другим гарантиям и обязательствам.</p>
+                <p>Налогообложение федерального уровня распространяется на все компании вне зависимости от штата регистрации. Уплачивается <strong>income tax</strong> с корпораций по прогрессивной шкале от 15% до 35%, <strong>income tax</strong> с физических лиц по прогрессивной шкале от 10% до 35%. Налоги с заработной платы составляют 15,3% и делятся пополам между работником и работодателем. Также есть другие налоги. НДС в США нет.</p>
+                <p>Налогообложение уровня штатов в каждом штате свое. Некоторые штаты взимают <strong>State income tax</strong>, некоторые <strong>Sales tax</strong> и/или другие формы налогов. На локальном уровне налоги, как правило, содержат добавку к налогам штата и налог с недвижимости. Если компания работает одновременно в нескольких штатах, то она должна уплачивать налоги во всех этих штатах по своим правилам.</p>
+                <p>Еще один важный момент — это определить, должна ли компания платить налоги в данном конкретном штате. Т.е. необходимо определить, есть ли <strong>Nexus</strong> у компании в этом штате. Зачастую нужно обращаться к профессионалам для разрешения этого вопроса. В качестве параметров могут служить наличие офиса в этом штате, наличие работников, количество продаж в этом штате по сумме или количеству сделок, дается ли в этом штате реклама напрямую или через ссылку на веб-сайте компании партнера.</p>
+                <p>Над национальным налоговым законодательством стоят международные соглашения (<strong>Tax Treaties</strong>). Российским компаниям нужно пользоваться Соглашением об устранении двойного налогообложения, заключенного в 1992г. между США и Россией, т.к. оно предоставляет более льготный режим.</p>
+                <p>К межнациональным налоговым вопросам можно отнести исполнение таких обязательств, как информационные формы отчетов <strong>FATCA</strong>, <strong>FBAR</strong> (штрафы за не сдачу $10K). Следует учитывать, что Россия присоединилась к системе автоматического уведомления налоговых органов об открытых расчетных счетах в иностранных банках.</p>
+            </div>
+
+            <div class="service-section">
+                <h2>Трудовое право</h2>
+                <p>Принимая на работу сотрудников, важно избегать дискриминации, harassment, начислять зарплату не ниже минимального ее размера, установленного законом, учитывать рабочее время и время переработки. См. <a href="http://webapps.dol.gov/elaws/" target="_blank" class="contact-link cta-btn">DOL</a></p>
+            </div>
+
+            <div class="service-section">
+                <h2>Обязательное медицинское страхование</h2>
+                <p>Закон о доступном медицинском страховании (<strong>Affordable Care Act or Obamacare</strong>) предписывает компаниям предоставлять работникам медицинские страховки по доступной цене. Малый бизнес (до 50 сотрудников с полным рабочим днем) освобожден от этого требования.</p>
+            </div>
+
+            <div class="service-section">
+                <h2>Вопросы резидентства</h2>
+                <p>Налоговым резидентом российский гражданин становится при нахождении в США более 183 дней. Резиденты США уплачивают налоги США на основе дохода, полученного в любой точке мира. Важно подавать налоговую отчетность с учетом этого требования. Существуют исключения из этого правила. Смотрите вопросы налогообложения <a href="https://www.irs.gov/individuals/international-taxpayers" target="_blank" class="contact-link cta-btn">IRS</a></p>
+                <p>Для подтверждения иностранного резидентства используйте форму <strong>W8-BEN</strong> или <strong>W8-BEN-E</strong>.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-size">
+        <div class="footer-top">
+            <p>Заказать звонок на консультацию</p>
+            <form class="foot-call-form">
+              <input type="text" placeholder="ваше имя" />
+              <input type="tel" placeholder="Телефон" />
+              <button type="submit">Запись</button>
+            </form>
+        </div>
+        <div class="footer-conf">
+            <a href="">Политика конфиндециальности</a>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-title">
+            <p class="phone">8 (913) 914 58 64</p>
+            <p>НАПРАВЛЕНИЯ</p>
+            <p>ВАЖНОЕ</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-contact"> 
+              <p class="info">Звонок по России бесплатный</p>
+              <p><a href="mailto:office@iac-a.ru">office@iac-a.ru</a></p>
+              <p class="number">+7 (383) 223 4485</p>
+              <p>630007 г. Новосибирск, Красный проспект, 14, офис 508</p>
+              <p class="number">+7 (383) 363 3152</p>
+              <p>630128 г. Новосибирск, ул. Разъезжая, д. 12, левое крыло, первый этаж</p>
+              <p class="number">+1 206 355 7398</p>
+              <p>543 Kirkham Lane, League City, TX, 77573</p>
+            </div>
+        
+            <div class="footer-services">
+              <ul>
+                <li>Стратегический консалтинг</li>
+                <li>HR консалтинг</li>
+                <li>Управление изменениями</li>
+                <li>Управление рисками</li>
+                <li>Устойчивое развитие и ESG</li>
+                <li>Обучение и развитие</li>
+                <li>Оптимизация бизнес-процессов</li>
+              </ul>
+            </div>
+        
+            <div class="footer-important">
+                <div class="presentation">
+                    <a href="">
+                        <img src="../img/purpdoc.svg" alt="presentation">
+                        <a href="#">Скачать презентацию о IACA</a>
+                    </a>
+                </div> 
+                <br>
+                <div class="foot-call-form">
+                    <button type="submit">Связаться с нами</button>
+                </div>
+                <br>
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a href="https://twitter.com/iacaRussiaUSA" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/iacaRussiaUSA/" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>© 1999-2025, IACA Consulting</p>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>  
+</footer> 
+</body>
+<button class="scroll-up-btn" id="scrollUpBtn" title="Наверх">
+    ↑
+</button>
+</html>

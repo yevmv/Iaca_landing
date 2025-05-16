@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные -->
+    <meta name="description" content="IACA Consulting предоставляет бухгалтерские и юридические услуги в России и США, включая налоговое планирование, регистрацию компаний, бухгалтерский аутсорсинг и консультации для IT-компаний.">
+    <meta name="keywords" content="IACA, Consulting, бухгалтерские услуги, налоговое планирование, регистрация компании, юридические услуги, бухгалтерский аутсорсинг, IT-компании, бизнес в США, регистрация LLC, регистрация Corporation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IACA Consulting">
+    <!-- соц сети -->
+    <meta property="og:title" content="IACA Consulting - Международные бухгалтерские и консалтинговые услуги">
+    <meta property="og:description" content="Предоставляем бухгалтерские и юридические услуги в России и США, помогаем с налоговым планированием, регистрацией компаний и консультируем IT-компании.">
+    <meta property="og:image" content="URL_к_изображению_для_сети_размер_1200x630.jpg">
+    <meta property="og:url" content="http://host1879272.hostland.pro/index.html">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <title>IACA Consulting | Международные бухгалтерские и консалтинговые услуги</title>
+    <link rel="stylesheet" href="../css/foritrus.css">
+    <link rel="icon" type="image/png" href="/./img/earth.svg">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./Js/feedback.js" defer></script>
+    <script src="./Js/menu.js" defer></script>
+    <script src="./Js/modalwin.js" async></script>
+    <script src="./Js/scrollUpBtn.js" defer></script>
+</head>
+    
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.webp" alt="IACA"></a>
+        </div>
+        <button class="hamburger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                <li><a href="../rus.html">УСЛУГИ В РОССИИ</a></li>
+                <li><a href="../usa.html">УСЛУГИ В США</a></li>
+                <li><a href="../feedback.html">ОТЗЫВЫ</a></li>
+                <li><a href="../price.html">ЦЕНЫ</a></li>
+                <li><a href="../about.html">О КОМПАНИИ</a></li>
+                <li><a href="../contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+            <!--Группа для кнопки и переключения языка-->
+        <div class="switch-btn">
+            <div class="language-switcher">
+                    <a href="#">RUS</a> | <a href="#">ENG</a>
+            </div>
+
+            <div class="cta-btn">
+                <a href="#" onclick="openForm('brief')">Заказать проект</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="modalwin">
+    <div class="modal-backdrop" id="modalBackdrop" onclick="closeForm()"></div>
+    <div class="contact-button" onclick="toggleForm()" aria-expanded="false" aria-controls="contactForm" role="button" tabindex="0" onkeydown="if(event.key==='Enter' || event.key===' ') toggleForm();">Связаться</div>
+    <div class="contact-form" id="contactForm" aria-hidden="true">
+        <form id="contactFormData" novalidate>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+            </div>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="organization">Организация</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Содержание письма</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">Я ознакомлен и согласен с <a href="#" tabindex="0">политикой конфиденциальности</a> и принимаю <a href="#" tabindex="0">соглашение об обработке персональных данных</a> *</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+  </section>
+<main>
+    <div class="main-content">
+        <h1 class="main-title">Услуги специально для IT компаний</h1>
+        <p class="intro-text">Профессиональные бухгалтерские услуги с 1999 года.</p>
+
+        <div class="service-section">
+            <h2>Наша специализация на IT-компаниях</h2>
+            <p>Одна из наших узких специализаций — это IT-компании. Некоторые из наших клиентов-айтишников с нами с 2001 года. Для наиболее полного и глубокого сервиса и понимания наших клиентов мы следуем IT-новостям, следим за новыми продуктами и течениями, посещаем IT-семинары и конференции. У нас работают профессионалы, владеющие как русским, так и английским языком, в том числе профессиональным бухгалтерским английским. Это важно, т.к. мы можем объясняться с CFOs, Controllers иностранных материнских компаний наших IT-клиентов в понятных профессиональных терминах.</p>
+            <p>У нас есть глубокое понимание потребностей IT-клиентов в сервисе. И в первую очередь, важность применения различных льгот и преференций в российском налоговом режиме для IT-компаний. Это дает IT-компаниям сравнительное превосходство перед аналогичными бизнесами в США и Европе.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Основные налоговые льготы и преференции для IT-компаний в России</h2>
+            <ul>
+                <li>Аккредитация в Минкомсвязи России позволяет снизить страховые взносы на зарплату до 14% и ниже (в зависимости от размера зарплаты);</li>
+                <li>Членство в Сколково, что позволяет помимо снижения страховых взносов до 14% и ниже, не платить налог на прибыль и НДС;</li>
+                <li>Работа в форме ИП на режиме УСН 6% или патенте;</li>
+                <li>Работа IT-компании на УСН;</li>
+                <li>Льгота по НДС на продажу прав на ПО и использование результатов интеллектуальной деятельности на основании лицензионного договора;</li>
+            </ul>
+            <p>Для Вашей IT-компании мы подберем оптимальную комбинацию использования льготных режимов и оформим переход на них для того, чтобы Ваши доходы росли и бизнес развивался. <a href="#" class="contact-link cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </div>
+
+        <div class="service-section">
+            <h2>Соблюдение законодательства</h2>
+            <p>Помимо применения налоговых льгот IT-компании важно не "налетать на штрафы" при исполнении обязательств в других сферах IT-бизнеса. Поскольку основная статья расходов IT-компании — это заработная плата, большую роль здесь играет следование Трудовому кодексу, закону о защите персональной информации. Зачастую требования Трудового кодекса РФ не отвечают потребностям IT-компаний: по учету рабочего времени, при дистанционной работе, по применению тарифов оплаты труда в валюте и т.п. Наши специалисты помогут найти для Вас варианты, сближающие эти две сути — обязательства и потребности.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Разработка трудовых документов</h2>
+            <p>Мы разработаем для Вашей IT-компании:</p>
+            <ul>
+                <li>Трудовые договоры по конкретным позициям IT-специалистов, включая Должностные инструкции к ним, Соглашение о неразглашении, Соглашение о хранении персональной информации;</li>
+                <li>Договоры подряда с фрилансерами ИП;</li>
+                <li>Договоры авторского заказа с фрилансерами — физическими лицами;</li>
+            </ul>
+            <p><a href="#" class="contact-link cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </div>
+
+        <div class="service-section">
+            <h2>Охрана коммерческой тайны</h2>
+            <p>Исключительно важно для IT-компании охранять как собственные разработки, так и коммерческую тайну контрагентов IT-компании, включая код и дизайн, а также другую информацию, составляющую коммерческую тайну.</p>
+            <p>Мы разработаем для Вашей IT-компании:</p>
+            <ul>
+                <li>Соглашение о неразглашении коммерческой тайны компании (NDA);</li>
+            </ul>
+            <p><a href="#" class="contact-link cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </div>
+
+        <div class="service-section">
+            <h2>Валютный контроль</h2>
+            <p>Если Ваша IT-компания получает доходы из-за рубежа, валютный контроль должен быть в центре внимания, т.к. нарушения его требований влекут крупные штрафы.</p>
+            <p>Наши специалисты обеспечат своевременное соблюдение валютного контроля:</p>
+            <ul>
+                <li>Составление и сдача Паспорта сделки;</li>
+                <li>Составление и сдача Справки о валютных операциях;</li>
+                <li>Прочие документы, необходимые банку.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-size">
+        <div class="footer-top">
+            <p>Заказать звонок на консультацию</p>
+            <form class="foot-call-form">
+              <input type="text" placeholder="ваше имя" />
+              <input type="tel" placeholder="Телефон" />
+              <button type="submit">Запись</button>
+            </form>
+        </div>
+        <div class="footer-conf">
+            <a href="">Политика конфиндециальности</a>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-title">
+            <p class="phone">8 (913) 914 58 64</p>
+            <p>НАПРАВЛЕНИЯ</p>
+            <p>ВАЖНОЕ</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-contact"> 
+              <p class="info">Звонок по России бесплатный</p>
+              <p><a href="mailto:office@iac-a.ru">office@iac-a.ru</a></p>
+              <p class="number">+7 (383) 223 4485</p>
+              <p>630007 г. Новосибирск, Красный проспект, 14, офис 508</p>
+              <p class="number">+7 (383) 363 3152</p>
+              <p>630128 г. Новосибирск, ул. Разъезжая, д. 12, левое крыло, первый этаж</p>
+              <p class="number">+1 206 355 7398</p>
+              <p>543 Kirkham Lane, League City, TX, 77573</p>
+            </div>
+        
+            <div class="footer-services">
+              <ul>
+                <li>Стратегический консалтинг</li>
+                <li>HR консалтинг</li>
+                <li>Управление изменениями</li>
+                <li>Управление рисками</li>
+                <li>Устойчивое развитие и ESG</li>
+                <li>Обучение и развитие</li>
+                <li>Оптимизация бизнес-процессов</li>
+              </ul>
+            </div>
+        
+            <div class="footer-important">
+                <div class="presentation">
+                    <a href="">
+                        <img src="../img/purpdoc.svg" alt="presentation">
+                        <a href="#">Скачать презентацию о IACA</a>
+                    </a>
+                </div> 
+                <br>
+                <div class="foot-call-form">
+                    <button type="submit">Связаться с нами</button>
+                </div>
+                <br>
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a href="https://twitter.com/iacaRussiaUSA" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/iacaRussiaUSA/" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>© 1999-2025, IACA Consulting</p>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>  
+</footer> 
+</body>
+<button class="scroll-up-btn" id="scrollUpBtn" title="Наверх">
+    ↑
+</button>
+</html>

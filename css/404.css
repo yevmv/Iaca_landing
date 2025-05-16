@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  
+  }
+  .hamburger {
+    display: none;
+  }
+  .thin { font-weight: 100; /* Thin */ }
+  .extra-light { font-weight: 200; /* Extra Light */ }
+  .light { font-weight: 300; /* Light */ }
+  .regular { font-weight: 400; /* Regular */ }
+  .medium { font-weight: 500; /* Medium */ }
+  .semi-bold { font-weight: 600; /* Semi Bold */ }
+  .bold { font-weight: 700; /* Bold */ }
+  .extra-bold { font-weight: 800; /* Extra Bold */ }
+  .black { font-weight: 900; /* Black */ }
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.134),rgba(251, 0, 255, 0.192) );
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  header {
+    background-color: #151019;
+    padding: 30px 0;
+    color: #fff;
+    position: relative;
+  }
+  main {
+    background-color: #151019;
+    color: white;
+    height: 776px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+  }
+  .container {
+    display: grid;
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+  }
+  .logo img {
+      height: 100px; 
+  }
+  .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding-left: 20px;
+      height: 30px;
+  }
+  .nav li {
+      display: inline;
+  
+  }
+  .nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  .language-switcher {
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      padding-bottom: 10px;
+  
+  }
+  
+  .language-switcher a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 5px;
+      
+  }
+  .cta-btn {
+    padding-bottom: 40px;
+  }
+  /* Кнопка */
+  .cta-btn a {
+    display: inline-block;
+    padding: 18px 45px;
+    background-color: #8c2c8e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: -0.1rem;
+    font-weight: 300;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn a:hover {
+      background-color: #FF6E30;
+  }
+    .error{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center
+
+
+    }
+    .error img{
+        width: 600px;
+        height: auto;
+    }
+    .error p{
+        font-weight: 900;
+        font-size: 32px;
+    }
+    .error span{
+        font-weight: 100;
+        font-size: 46px;
+    }
+
+    .back {
+        display: inline-block;
+        padding: 18px 45px;
+        background-color: #8c2c8e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        letter-spacing: -0.1rem;
+        font-weight: 300;
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+      }
+      
+    .back:hover{
+        background-color: #FF6E30;
+    }
+
+    .scroll-up-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #8C2C8E;
+        color: white;
+        border: none;
+        display: none;
+        border-radius: 50%;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      
+      .scroll-up-btn:hover {
+        background-color: #FF6E30;
+        transform: scale(1.1);
+      }
+      .scroll-up-btn.show {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+       /* Стили для полосы прокрутки */
+   ::-webkit-scrollbar {
+    width: 12px; /* Ширина вертикальной полосы прокрутки */
+    height: 12px;
+  }
+
+  /* Стили для фона полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; /* Светлый фон полосы прокрутки */
+  }
+
+  /* Стили для самого ползунка */
+  ::-webkit-scrollbar-thumb {
+    background: #a8a8a8; /* Темно-серый цвет ползунка */
+    border-radius: 15px; /* Округленные углы ползунка */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+  }
+
+  /* Стили для ползунка при наведении */
+  ::-webkit-scrollbar-thumb:hover{
+    background: #555; /* Темно-серый цвет при наведении */
+  }

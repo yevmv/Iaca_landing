@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная страница -->
+  <url>
+    <loc>http://host1879272.hostland.pro/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+  <!-- Специальные страницы -->
+  <url>
+    <loc>http://host1879272.hostland.pro/about.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/contacts.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/feedback.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/price.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <!-- Услуги -->
+  <url>
+    <loc>http://host1879272.hostland.pro/rus.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/usa.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/forit.html</loc>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>http://host1879272.hostland.pro/foritrus.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/legalservices.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/regcorp.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/usabusiness.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/accountingRUS.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/accountingUSA.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://host1879272.hostland.pro/accounting-maintenance.html</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://host1879272.hostland.pro/404.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

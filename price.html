@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные -->
+    <meta name="description" content="IACA Consulting предоставляет бухгалтерские и юридические услуги в России и США, включая налоговое планирование, регистрацию компаний, бухгалтерский аутсорсинг и консультации для IT-компаний.">
+    <meta name="keywords" content="IACA, Consulting, бухгалтерские услуги, налоговое планирование, регистрация компании, юридические услуги, бухгалтерский аутсорсинг, IT-компании, бизнес в США, регистрация LLC, регистрация Corporation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IACA Consulting">
+    <!-- соц сети -->
+    <meta property="og:title" content="IACA Consulting - Международные бухгалтерские и консалтинговые услуги">
+    <meta property="og:description" content="Предоставляем бухгалтерские и юридические услуги в России и США, помогаем с налоговым планированием, регистрацией компаний и консультируем IT-компании.">
+    <meta property="og:image" content="URL_к_изображению_для_сети_размер_1200x630.jpg">
+    <meta property="og:url" content="http://host1879272.hostland.pro/index.html">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <title>IACA Consulting | Международные бухгалтерские и консалтинговые услуги</title>
+    <link rel="stylesheet" href="./css/price.css">
+    <link rel="icon" type="image/png" href="/./img/earth.svg">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./Js/feedback.js" defer></script>
+    <script src="./Js/menu.js" defer></script>
+    <script src="./Js/modalwin.js" async></script>
+    <script src="./Js/scrollUpBtn.js" defer></script>
+</head>
+    
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.webp" alt="IACA"></a>
+        </div>
+        <button class="hamburger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                <li><a href="./rus.html">УСЛУГИ В РОССИИ</a></li>
+                <li><a href="./usa.html">УСЛУГИ В США</a></li>
+                <li><a href="./feedback.html">ОТЗЫВЫ</a></li>
+                <li><a href="./price.html">ЦЕНЫ</a></li>
+                <li><a href="./about.html">О КОМПАНИИ</a></li>
+                <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+            <!--Группа для кнопки и переключения языка-->
+        <div class="switch-btn">
+            <div class="language-switcher">
+                    <a href="#">RUS</a> | <a href="#">ENG</a>
+            </div>
+
+            <div class="cta-btn">
+                <a href="#" onclick="openForm('brief')">Заказать проект</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="modalwin">
+    <div class="modal-backdrop" id="modalBackdrop" onclick="closeForm()"></div>
+    <div class="contact-button" onclick="toggleForm()" aria-expanded="false" aria-controls="contactForm" role="button" tabindex="0" onkeydown="if(event.key==='Enter' || event.key===' ') toggleForm();">Связаться</div>
+    <div class="contact-form" id="contactForm" aria-hidden="true">
+        <form id="contactFormData" novalidate>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+            </div>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="organization">Организация</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Содержание письма</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">Я ознакомлен и согласен с <a href="#" tabindex="0">политикой конфиденциальности</a> и принимаю <a href="#" tabindex="0">соглашение об обработке персональных данных</a> *</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+  </section>
+<h1 class="main-title">Прайс лист</h1>
+<section class="price-description">
+    <h1>На профессиональные бухгалтерские и юридические услуги в Новосибирске и США</h1>
+    <p>Мы заключаем договор между юридическими лицами.
+        Никаких дополнительных платежей таких, как страховые взносы,<br> на стоимость услуги нет.
+        Мы заключаем договор с ответственностью, т.е. мы берём на себя материальные обязательства перед вами.
+        Ответственность застрахована.</p>
+</section>
+
+<section class="price-container">
+    <table class="price-table">
+        <h2>Бухгалтерское обслуживание</h2>
+        <tbody>
+            <tr>
+                <td>Абонентское бухгалтерское обслуживание <a href="#">Подробнее</a></td>
+                <td>от 6 000 рублей в месяц</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="price-table">
+        <tbody>
+            <h2>Отдельные бухгалтерские услуги</h2>
+            <tr>
+                <td>Налоговое планирование <a href="#">Подробнее</a></td>
+                <td>от 10 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Восстановление бухгалтерии и налоговой отчетности <a href="#">Подробнее</a></td>
+                <td>от 50 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Проведение проверки <a href="#">Подробнее</a></td>
+                <td>от 50 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Консультации по налоговым вопросам Подробнее устно письменно</td>
+                <td>1 500 руб. за час<br>от 1 500 руб.</td>
+            </tr>
+            <tr>
+                <td>Составление  и сдача "нулевой" отчетности</td>
+                <td>2 000 руб. за отчетность,<br>
+                    3 000 руб. за отчетность с электронной отправкой</td>
+            </tr>
+            <tr>
+                <td>Составление приказа об учетной политике</td>
+                <td>от 1 000 руб.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="price-table">
+        <tbody>
+            <h2>Юридические услуги</h2>
+            <tr>
+                <td>Регистрация ООО <a href="#">Подробнее</a></td>
+                <td>4 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Регистрация ООО с иностранными учредителями <a href="#">Подробнее</a></td>
+                <td>10 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Внесение изменений в ЕГРЮЛ <a href="#">Подробнее</a></td>
+                <td>4 000 руб. за этап</td>
+            </tr>
+            <tr>
+                <td>Ликвидация ООО <a href="#">Подробнее</a></td>
+                <td>20 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Регистрация Индивидуального предпринимателя (ИП) <a href="#">Подробнее</a></td>
+                <td>3 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Закрытие ИП <a href="#">Подробнее</a></td>
+                <td>5 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Закрытие ИП <a href="#">Подробнее</a></td>
+                <td>5 000 руб.</td>
+            </tr>
+            <tr>
+                <td>Регистрация(Аккредитация) Филиала/Представительства иностранной компании <a href="#">Подробнее</a></td>
+                <td>55 000 руб.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="price-table">
+        <tbody>
+            <h2>Бизнес в США</h2>
+            <tr>
+                <td>Регистрация Corporation <a href="#">Подробнее</a></td>
+                <td>$600</td>
+            </tr>
+            <tr>
+                <td>Регистрация LLC <a href="#">Подробнее</a></td>
+                <td>$600</td>
+            </tr>
+            <tr>
+                <td>Бухгалтерское обслуживание <a href="#">Подробнее</a></td>
+                <td>Ежемесячно по согласованию</td>
+            </tr>
+            <tr>
+                <td>Составление и сдача годового налогового отчета <a href="#">Подробнее</a></td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>Составление и сдача годового налогового "нулевого" отчета <a href="#">Подробнее</a></td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Получение ITIN <a href="#">Подробнее</a></td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Консультации по налоговым вопросам <a href="#">Подробнее</a></td>
+                <td>$150 в час</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="call-block">
+        <div class="call-wind">
+            <p>Хотите заказать бухгалтерские и юридические услуги в Новосибирске или США?</p>
+            <a href="tel:+79139145864" class="call-form" type="submit">Звонок</a>
+        </div>
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <div class="footer-size">
+        <div class="footer-top">
+            <p>Заказать звонок на консультацию</p>
+            <form class="foot-call-form">
+              <input type="text" placeholder="ваше имя" />
+              <input type="tel" placeholder="Телефон" />
+              <button type="submit">Запись</button>
+            </form>
+        </div>
+        <div class="footer-conf">
+            <a href="">Политика конфиндециальности</a>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-title">
+            <p class="phone">8 (913) 914 58 64</p>
+            <p>НАПРАВЛЕНИЯ</p>
+            <p>ВАЖНОЕ</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-contact"> 
+              <p class="info">Звонок по России бесплатный</p>
+              <p><a href="mailto:office@iac-a.ru">office@iac-a.ru</a></p>
+              <p class="number">+7 (383) 223 4485</p>
+              <p>630007 г. Новосибирск, Красный проспект, 14, офис 508</p>
+              <p class="number">+7 (383) 363 3152</p>
+              <p>630128 г. Новосибирск, ул. Разъезжая, д. 12, левое крыло, первый этаж</p>
+              <p class="number">+1 206 355 7398</p>
+              <p>543 Kirkham Lane, League City, TX, 77573</p>
+            </div>
+        
+            <div class="footer-services">
+              <ul>
+                <li>Стратегический консалтинг</li>
+                <li>HR консалтинг</li>
+                <li>Управление изменениями</li>
+                <li>Управление рисками</li>
+                <li>Устойчивое развитие и ESG</li>
+                <li>Обучение и развитие</li>
+                <li>Оптимизация бизнес-процессов</li>
+              </ul>
+            </div>
+        
+            <div class="footer-important">
+                <div class="presentation">
+                    <a href="">
+                        <img src="./img/purpdoc.svg" alt="presentation">
+                        <a href="#">Скачать презентацию о IACA</a>
+                    </a>
+                </div> 
+                <br>
+                <div class="foot-call-form">
+                    <button type="submit">Связаться с нами</button>
+                </div>
+                <br>
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a href="https://twitter.com/iacaRussiaUSA" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/iacaRussiaUSA/" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>© 1999-2025, IACA Consulting</p>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>  
+</footer>
+</body>
+<button class="scroll-up-btn" id="scrollUpBtn" title="Наверх">
+    ↑
+</button>
+</html>

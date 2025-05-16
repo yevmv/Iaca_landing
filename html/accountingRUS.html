@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные -->
+    <meta name="description" content="IACA Consulting предоставляет бухгалтерские и юридические услуги в России и США, включая налоговое планирование, регистрацию компаний, бухгалтерский аутсорсинг и консультации для IT-компаний.">
+    <meta name="keywords" content="IACA, Consulting, бухгалтерские услуги, налоговое планирование, регистрация компании, юридические услуги, бухгалтерский аутсорсинг, IT-компании, бизнес в США, регистрация LLC, регистрация Corporation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IACA Consulting">
+    <!-- соц сети -->
+    <meta property="og:title" content="IACA Consulting - Международные бухгалтерские и консалтинговые услуги">
+    <meta property="og:description" content="Предоставляем бухгалтерские и юридические услуги в России и США, помогаем с налоговым планированием, регистрацией компаний и консультируем IT-компании.">
+    <meta property="og:image" content="URL_к_изображению_для_сети_размер_1200x630.jpg">
+    <meta property="og:url" content="http://host1879272.hostland.pro/index.html">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <title>IACA Consulting | Международные бухгалтерские и консалтинговые услуги</title>
+    <link rel="stylesheet" href="../css/accountingRUS.css">
+    <link rel="icon" type="image/png" href="/./img/earth.svg">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./Js/feedback.js" defer></script>
+    <script src="./Js/menu.js" defer></script>
+    <script src="./Js/modalwin.js" async></script>
+    <script src="./Js/scrollUpBtn.js" defer></script>
+</head>
+    
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.webp" alt="IACA"></a>
+        </div>
+        <button class="hamburger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                <li><a href="../rus.html">УСЛУГИ В РОССИИ</a></li>
+                <li><a href="../usa.html">УСЛУГИ В США</a></li>
+                <li><a href="../feedback.html">ОТЗЫВЫ</a></li>
+                <li><a href="../price.html">ЦЕНЫ</a></li>
+                <li><a href="../about.html">О КОМПАНИИ</a></li>
+                <li><a href="../contacts.html">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+            <!--Группа для кнопки и переключения языка-->
+        <div class="switch-btn">
+            <div class="language-switcher">
+                    <a href="#">RUS</a> | <a href="#">ENG</a>
+            </div>
+
+            <div class="cta-btn">
+                <a href="#" onclick="openForm('brief')">Заказать проект</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="modalwin">
+    <div class="modal-backdrop" id="modalBackdrop" onclick="closeForm()"></div>
+    <div class="contact-button" onclick="toggleForm()" aria-expanded="false" aria-controls="contactForm" role="button" tabindex="0" onkeydown="if(event.key==='Enter' || event.key===' ') toggleForm();">Связаться</div>
+    <div class="contact-form" id="contactForm" aria-hidden="true">
+        <form id="contactFormData" novalidate>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+            </div>
+            <div class="fields">
+                <div class="form-group">
+                    <label for="organization">Организация</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Содержание письма</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">Я ознакомлен и согласен с <a href="#" tabindex="0">политикой конфиденциальности</a> и принимаю <a href="#" tabindex="0">соглашение об обработке персональных данных</a> *</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+  </section>
+<main>
+    <div class="main-content">
+        <h1 class="main-title">Бухгалтерские услуги</h1>
+        <p class="intro-text">Профессиональные бухгалтерские услуги в Новосибирске с 1999 года</p>
+        <p class="intro-text">Налоги — это цена цивилизованности общества. С этим не поспоришь. Однако снизить для Вас эту цену вполне возможно. Такие бухгалтерские услуги как налоговое планирование, оптимизация налоговой нагрузки, снижение рисков налоговых проверок, штрафов, грамотная постановка бухгалтерского учёта, помогут вам увеличить качество бухгалтерских услуг не увеличивая бюджета.</p>
+
+        <section class="service-section">
+            <h2>Налоговое планирование</h2>
+            <p>Мы рассмотрим Вашу индивидуальную ситуацию в контексте активов (имущества), сферы бизнеса, структуры учредительского капитала, географических особенностей и т.п. и предложим наиболее подходящее решение именно в Вашей ситуации.</p>
+            <p>Решение предполагает анализ на предмет законного снижения налоговой нагрузки, защиты активов, устранения аффилированности, выполнения заданных налоговым органом показателей налоговой нагрузки, рисков налоговой проверки. В качестве готового решения Вы получите:</p>
+            <ul>
+                <li>рекомендации по внесению изменений в структуру собственников для установления желаемого баланса вкладов и ответственности собственников и устранения аффилированности;</li>
+                <li>рекомендации по формированию комбинации юридических лиц и индивидуальных предпринимателей с подходящей системой в каждом конкретном случае системой налогообложения;</li>
+                <li>рекомендации на каком юридическом лице или ИП какое имущество учитывать, на каком юр. лице учитывать персонал и начислять заработную плату;</li>
+                <li>рекомендации по заключению договоров между субъектами группы.</li>
+            </ul>
+            <p>Цена на услугу Налогового планирования согласовывается индивидуально, смотрите <a href="../price.html" class="cta-btn">здесь</a> <a href="#" class="cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </section>
+
+        <section class="service-section">
+            <h2>Восстановление бухгалтерского учета</h2>
+            <p>Мы предложим Вам наименее затратный вариант восстановления, основываясь на имеющихся данных. Ситуации могут разные, может быть утрачена электронная база, или электронная база совсем не велась, могут быть утрачены первичные документы и т.д. Мы принимаем во внимание фактическое состояние дел и предлагаем варианты восстановления бухгалтерского учета и налоговой отчетности.</p>
+            <p>Стоимость услуги согласовывается индивидуально, смотрите <a href="../price.html" class="cta-btn">здесь</a> <a href="#" class="cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </section>
+
+        <section class="service-section">
+            <h2>Проведение проверки</h2>
+            <p>Мы не проводим обязательный аудит финансовой отчетности, предусмотренный Федеральным законом от 30 декабря 2008 г. N 307-ФЗ "Об аудиторской деятельности". Мы проводим проверку бухгалтерского учета, бухгалтерской и налоговой отчетности, связанной с решением собственников провести такую проверку, для подготовки компании к налоговой проверке, для проведения Due Diligence с целью определения стоимости компании.</p>
+            <p>Стоимость услуги согласовывается индивидуально, смотрите <a href="../price.html" class="cta-btn">здесь</a> <a href="#" class="cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </section>
+
+        <section class="service-section">
+            <h2>Консультации по налоговым вопросам</h2>
+            <p>Мы проводим консультации по вопросам налогообложения как устные, так и письменные. При подготовке консультации мы исследуем налоговое законодательство, письма налоговой инспекции и арбитраж. Решение опирается на найденные факты и содержит ссылки к источнику.</p>
+            <p>Стоимость консультаций смотрите <a href="../price.html" class="cta-btn">здесь</a> <a href="#" class="cta-btn" onclick="openForm('question')">Напишите нам</a></p>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-size">
+        <div class="footer-top">
+            <p>Заказать звонок на консультацию</p>
+            <form class="foot-call-form">
+              <input type="text" placeholder="ваше имя" />
+              <input type="tel" placeholder="Телефон" />
+              <button type="submit">Запись</button>
+            </form>
+        </div>
+        <div class="footer-conf">
+            <a href="">Политика конфиндециальности</a>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-title">
+            <p class="phone">8 (913) 914 58 64</p>
+            <p>НАПРАВЛЕНИЯ</p>
+            <p>ВАЖНОЕ</p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-contact"> 
+              <p class="info">Звонок по России бесплатный</p>
+              <p><a href="mailto:office@iac-a.ru">office@iac-a.ru</a></p>
+              <p class="number">+7 (383) 223 4485</p>
+              <p>630007 г. Новосибирск, Красный проспект, 14, офис 508</p>
+              <p class="number">+7 (383) 363 3152</p>
+              <p>630128 г. Новосибирск, ул. Разъезжая, д. 12, левое крыло, первый этаж</p>
+              <p class="number">+1 206 355 7398</p>
+              <p>543 Kirkham Lane, League City, TX, 77573</p>
+            </div>
+        
+            <div class="footer-services">
+              <ul>
+                <li>Стратегический консалтинг</li>
+                <li>HR консалтинг</li>
+                <li>Управление изменениями</li>
+                <li>Управление рисками</li>
+                <li>Устойчивое развитие и ESG</li>
+                <li>Обучение и развитие</li>
+                <li>Оптимизация бизнес-процессов</li>
+              </ul>
+            </div>
+        
+            <div class="footer-important">
+                <div class="presentation">
+                    <a href="">
+                        <img src="../img/purpdoc.svg" alt="presentation">
+                        <a href="#">Скачать презентацию о IACA</a>
+                    </a>
+                </div> 
+                <br>
+                <div class="foot-call-form">
+                    <button type="submit">Связаться с нами</button>
+                </div>
+                <br>
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a href="https://twitter.com/iacaRussiaUSA" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                        <a href="https://www.facebook.com/iacaRussiaUSA/" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>© 1999-2025, IACA Consulting</p>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>  
+</footer> 
+</body>
+<button class="scroll-up-btn" id="scrollUpBtn" title="Наверх">
+    ↑
+</button>
+</html>

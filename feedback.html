@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные -->
+    <meta name="description" content="IACA Consulting предоставляет бухгалтерские и юридические услуги в России и США, включая налоговое планирование, регистрацию компаний, бухгалтерский аутсорсинг и консультации для IT-компаний.">
+    <meta name="keywords" content="IACA, Consulting, бухгалтерские услуги, налоговое планирование, регистрация компании, юридические услуги, бухгалтерский аутсорсинг, IT-компании, бизнес в США, регистрация LLC, регистрация Corporation">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IACA Consulting">
+    <!-- соц сети -->
+    <meta property="og:title" content="IACA Consulting - Международные бухгалтерские и консалтинговые услуги">
+    <meta property="og:description" content="Предоставляем бухгалтерские и юридические услуги в России и США, помогаем с налоговым планированием, регистрацией компаний и консультируем IT-компании.">
+    <meta property="og:image" content="URL_к_изображению_для_сети_размер_1200x630.jpg">
+    <meta property="og:url" content="http://host1879272.hostland.pro/index.html">
+    <meta property="og:type" content="website">
+    <meta name="format-detection" content="telephone=no">
+    <title>IACA Consulting | Международные бухгалтерские и консалтинговые услуги</title>
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="icon" type="image/png" href="/./img/earth.svg">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./Js/feedback.js" defer></script>
+    <script src="./Js/menu.js" defer></script>
+    <script src="./Js/modalwin.js" async></script>
+    <script src="./Js/scrollUpBtn.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.webp" alt="IACA"></a>
+            </div>
+            <button class="hamburger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="./rus.html">УСЛУГИ В РОССИИ</a></li>
+                    <li><a href="./usa.html">УСЛУГИ В США</a></li>
+                    <li><a href="./feedback.html">ОТЗЫВЫ</a></li>
+                    <li><a href="./price.html">ЦЕНЫ</a></li>
+                    <li><a href="./about.html">О КОМПАНИИ</a></li>
+                    <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+                <!--Группа для кнопки и переключения языка-->
+            <div class="switch-btn">
+                <div class="language-switcher">
+                        <a href="#">RUS</a> | <a href="#">ENG</a>
+                </div>
+    
+                <div class="cta-btn">
+                    <a href="#" onclick="openForm('brief')">Заказать проект</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="modalwin">
+        <div class="modal-backdrop" id="modalBackdrop" onclick="closeForm()"></div>
+        <div class="contact-button" onclick="toggleForm()" aria-expanded="false" aria-controls="contactForm" role="button" tabindex="0" onkeydown="if(event.key==='Enter' || event.key===' ') toggleForm();">Связаться</div>
+        <div class="contact-form" id="contactForm" aria-hidden="true">
+            <form id="contactFormData" novalidate>
+                <div class="fields">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required autocomplete="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" />
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="form-group">
+                        <label for="organization">Организация</label>
+                        <input type="text" id="organization" name="organization" autocomplete="organization" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Содержание письма</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required />
+                    <label for="privacy">Я ознакомлен и согласен с <a href="#" tabindex="0">политикой конфиденциальности</a> и принимаю <a href="#" tabindex="0">соглашение об обработке персональных данных</a> *</label>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+      </section>
+<section class="feedback">
+    <div class="main-title">
+        <h1>Отзывы наших клиентов</h1>
+    </div>
+
+        <div class="sibersfeedback">
+            <div class="sibers">
+                <img src="./img/sibers.webp" alt="logo">
+            </div>
+            <div class="sibers-description">
+                <p>Мы с IACA вместе с 2000 года. Росли и развивались бок о бок, вместе с нашими добрыми отношениями.
+                    Мы ценим их надежность, быстрое реагирование, ответственность и удобный сервис.
+                    Все делаем удаленно, хотя у нас, например, при значительном штате сотрудников полно больничных.
+                    Не припомню, чтобы мы платили какие бы то ни было штрафы.</p>
+                <br>            
+                <p>Самое главное то, что они консультируют нас о возможных в нашем конкретном случае опциях по законному снижению налогов и применении льгот.
+                Более того, они подготовили весь пакет документов для этого. В итоге, при их содействии мы сэкономили 2,6% от выручки, что в нашем случае значительная сумма, тем самым улучшив финансовый результат.
+                Поскольку эта стратегия распространяется на несколько лет, то экономия будет давать нам преимущество и в будущем.</p>
+                <br>
+                <p>Если вы задумались о профессиональной поддержке и дружественных отношениях,
+                а не только о бухучете, рекомендую IACA всем, особенно IT компаниям, поскольку IT это их ниша.</p>
+                <br>
+                <p>Фин. директор Sibers, Мария Шумило <a href="http://www.sibers.ru" target="_blank">www.sibers.ru</a></p>
+            </div>
+        </div>
+        <div class="pafeedback">
+            <div class="peerapp">
+                <img src="./img/PA.webp" alt="logo">
+            </div>
+            <div class="peerapp-description">
+                <p>Мы сотрудничаем с IACA с 2012 года. Мы как IT компания и 100% дочка американской компании искали бухгалтерию, которая работает не только в сфере российского бухгалтерского и налогового законодательства, но и владеет знаниями законодательства США.
+                    Поскольку стояла задача сдачи отчетности в головную компанию в США, бухгалтерия должна, кроме того, владеть не просто английским языком, а финансовым и бухгалтерским английским.</p>
+                <br>            
+                <p>IACA полностью ведут наш бухгалтерский учет, налоги, валютный контроль, зарплату, банк.
+                     Формируют для материнской компании наш бюджет и сдают им ежемесячную отчетность. Они также делали нам перерегистрацию (смена адреса) и аккредитацию в Минсвязи. Т.о. они помогли нам значительно сэкономить на налогах.
+                     Все льготы в налоговой они подтверждают сами, сдают всю отчетность, включая отчет о контролируемых сделках, проходят проверки.</p>
+                <br>
+                <p>Нам удобно с ними работать, т.к. мы все делаем удаленно.
+                    Мы сбрасываем им сканы, они считают зар.плату, общаются с банком. Т.о., мы можем заниматься нашим прямым делом. Рекомендую всем IT компаниям обращаться в IACA.</p>
+                <br>
+                <p>Генеральный директор PeerApp Russia, Максим Хон  <a href="http://www.peerapp.com" target="_blank">www.peerapp.ru</a></p>
+            </div>
+        </div>
+        <div class="anzfeedback">
+            <div class="anz">
+                <img src="./img/az.webp" alt="logo">
+            </div>
+            <div class="anz-description">
+                <p>Хочу выразить благодарность IACA за многолетние партнерские отношения. В 2005 году IACA обратилась к нам за услугами SEO и хостинга,
+                     и мы стали заниматься продвижением их сайта. К концу года мы задумались о том, что нам самим нужно скоро сдавать отчетность в налоговую и обратились к IACA.
+                     С тех пор они нам оказывают бухгалтерские услуги и делают налоги, а мы им услуги хостинга и SEO.</p>
+                <br>            
+                <p>Хочу выразить благодарность IACA за многолетние партнерские отношения. В 2005 году IACA обратилась к нам за услугами SEO и хостинга, и мы стали заниматься продвижением их сайта. К концу года мы задумались о том,
+                     что нам самим нужно скоро сдавать отчетность в налоговую и обратились к IACA. С тех пор они нам оказывают бухгалтерские услуги и делают налоги, а мы им услуги хостинга и SEO.
+                     Что мне нравится в наших отношениях, это то, что нам оказывают бух.услуги в полном комплексе, включая изменения в ЕГРЮЛ и консультирование по составлению договоров с нашими клиентами и при этом, никогда не стараются нам что-либо навязать или продать нам то, что нам не нужно.
+                     Работают они слаженно, несмотря на то, что с нами работает 2 специалиста. Один на текущих операциях, другой занимается анализом и отчетами.
+                     Как мы понимаем, это дает возможность дополнительного контроля качества.</p>
+                <br>
+                <p> Мы IT компания, мы привыкли работать «в цифре», в он-лайн.  Мы с IACA нашли удобный для нас обоих вариант взаимодействия.
+                    Практически все работы делаются удаленно, т.е. нам не приходится ездить, возить документы, приезжать ставить подписи. Это все в прошлом.</p>
+                <br>
+                <p>
+                    Мы высылаем сканы документов или составляем реестр продаж в Excel и сбрасываем в IACA, выгружаем банк, обсуждаем детали по Skype. От них получаем готовую отчетность, платежки и рекомендации кому сколько оплатить.
+                    Они также дают нам советы и рекомендации по законному снижению налогов.
+                </p>
+                <br>
+                <p>
+                    Я рекомендую IACA, особенно для IT компаний. Здесь вы найдете качественный сервис при вашей минимальной отвлеченности от вашего бизнеса.
+                </p>
+                <br>
+                <p>Зам. Директора ООО "Аэнзет", Юлия Тихонская <a href="http://www.anz.ru" target="_blank">www.anz.ru</a></p>
+            </div>
+        </div>    
+
+</section>
+
+<footer class="footer">
+        <div class="footer-size">
+            <div class="footer-top">
+                <p>Заказать звонок на консультацию</p>
+                <form class="foot-call-form">
+                  <input type="text" placeholder="ваше имя" />
+                  <input type="tel" placeholder="Телефон" />
+                  <button type="submit">Запись</button>
+                </form>
+            </div>
+            <div class="footer-conf">
+                <a href="">Политика конфиндециальности</a>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-title">
+                <p class="phone">8 (913) 914 58 64</p>
+                <p>НАПРАВЛЕНИЯ</p>
+                <p>ВАЖНОЕ</p>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="footer-contact"> 
+                  <p class="info">Звонок по России бесплатный</p>
+                  <p><a href="mailto:office@iac-a.ru">office@iac-a.ru</a></p>
+                  <p class="number">+7 (383) 223 4485</p>
+                  <p>630007 г. Новосибирск, Красный проспект, 14, офис 508</p>
+                  <p class="number">+7 (383) 363 3152</p>
+                  <p>630128 г. Новосибирск, ул. Разъезжая, д. 12, левое крыло, первый этаж</p>
+                  <p class="number">+1 206 355 7398</p>
+                  <p>543 Kirkham Lane, League City, TX, 77573</p>
+                </div>
+            
+                <div class="footer-services">
+                  <ul>
+                    <li>Стратегический консалтинг</li>
+                    <li>HR консалтинг</li>
+                    <li>Управление изменениями</li>
+                    <li>Управление рисками</li>
+                    <li>Устойчивое развитие и ESG</li>
+                    <li>Обучение и развитие</li>
+                    <li>Оптимизация бизнес-процессов</li>
+                  </ul>
+                </div>
+            
+                <div class="footer-important">
+                    <div class="presentation">
+                        <a href="">
+                            <img src="./img/purpdoc.svg" alt="presentation">
+                            <a href="#">Скачать презентацию о IACA</a>
+                        </a>
+                    </div> 
+                    <br>
+                    <div class="foot-call-form">
+                        <button type="submit">Связаться с нами</button>
+                    </div>
+                    <br>
+                    <div class="social-media">
+                        <div class="social-circle">
+                            <a href="https://twitter.com/iacaRussiaUSA" target="_blank"><img src="./img/twitter.webp" alt=""></a>
+                            <a href="https://www.facebook.com/iacaRussiaUSA/" target="_blank"><img src="./img/facebook.webp" alt=""></a>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>© 1999-2025, IACA Consulting</p>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>  
+</footer> 
+</body>
+<button class="scroll-up-btn" id="scrollUpBtn" title="Наверх">
+    ↑
+</button>
+</html>
